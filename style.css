@@ -1,0 +1,156 @@
+@font-face {
+    font-family: Tesla;
+    src: url("fontes/TESLA.ttf");
+}
+
+@font-face {
+    font-family: Textos;
+    src: url("fontes/MuseoModerno-VariableFont_wght.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header {
+    height: 2rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(33, 33, 33);
+}
+
+ul.menu {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+}
+
+li.elementoMenu {
+    color: white;
+}
+
+li.elementoMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+li.elementoMenu a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+div.apresentar {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 25px solid rgb(52, 52, 52);
+    /*border: 2px solid lightgray;*/
+}
+
+div.celular {
+    background-image: url("imagens/tela-ligada-perfil.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+div.celular:hover {
+    background-image: url("imagens/tela-apagada-perfil.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+    cursor: pointer;
+}
+
+div.escrita {
+    color: white;
+    font-family: Tesla;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+}
+
+div.telas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+div.telas p {
+    font-family: Textos;
+    font-size: 1.5rem;
+    color: white;
+    padding: 5px
+}
+
+div.telas img {
+    width: 20%;
+}
+
+div.faraday {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+div.faraday h1 {
+    font-family: Tesla;
+    color: rgb(85, 85, 255);
+    text-decoration: underline;
+    font-size: 3.3rem;
+}
+
+div.faraday p {
+    font-family: Textos;
+    color: white;
+    font-size: 1.3rem;
+}
+
+div.faraday img {
+    width: 35%;
+}
+
+div.separar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid rgb(82, 82, 82);
+}
+
+div.separar img {
+    width: 25%;
+}
+
+footer {
+    border-top: 5px solid rgb(99, 99, 99);
+    color: white;
+    font-size: 1rem;
+    /* superior | direita | inferior | esquerda */
+    padding: 10px 10px 0px 10px;
+}
